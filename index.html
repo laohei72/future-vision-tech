@@ -3,10 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>未來視界科技有限公司</title>
+    <title>未來視界科技有限公司 - 智慧連結世界</title>
+
+    <!-- SEO and Social Sharing Meta Tags -->
+    <meta name="description" content="未來視界科技專注於提供企業AI解決方案、數位轉型顧問與雲端整合技術，助您智慧連結世界，創造數位未來。" />
+    <meta property="og:title" content="未來視界科技有限公司" />
+    <meta property="og:description" content="智慧連結世界，創造數位未來。" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://future.laohei.me" /> <!-- 请确认这是您的最终域名 -->
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    
+    <!-- Smooth Scrolling CSS -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body>
+  <body id="top">
 
     <!-- 導覽列 -->
     <nav class="container-fluid">
@@ -14,9 +31,9 @@
         <li><strong>未來視界科技</strong></li>
       </ul>
       <ul>
-        <li><a href="#">首頁</a></li>
-        <li><a href="#">關於我們</a></li>
-        <li><a href="#" role="button">聯絡我們</a></li>
+        <li><a href="#top">首頁</a></li>
+        <li><a href="about.html">關於我們</a></li> <!-- 链接到新的 about.html 页面 -->
+        <li><a href="#contact" role="button">聯絡我們</a></li>
       </ul>
     </nav>
 
@@ -34,7 +51,7 @@
             <figcaption><a href="https://unsplash.com/photos/wD1LRb9OeEo" target="_blank">圖片來源：Unsplash</a></figcaption>
           </figure>
 
-          <h3>我們的服務</h3>
+          <h3 id="services">我們的服務</h3> <!-- 为服务区域添加ID，方便从其他页面跳转回来 -->
           <p><strong>1. 數位轉型顧問：</strong>量身打造企業的轉型策略與實施計畫。</p>
           <p><strong>2. AI 解決方案：</strong>導入智慧系統、自動化流程，提升營運效率。</p>
           <p><strong>3. 雲端整合平台：</strong>建構跨平台雲端應用，支援遠端與即時資料連結。</p>
@@ -43,17 +60,18 @@
     </main>
 
     <!-- 訂閱/聯絡區 -->
-    <section aria-label="Subscribe example">
+    <section aria-label="Subscribe example" id="contact">
       <div class="container">
         <article>
           <hgroup>
             <h2>聯絡我們</h2>
             <h3>留下聯絡方式，我們會盡快與您聯繫</h3>
           </hgroup>
-          <form class="grid">
-            <input type="text" id="firstname" name="firstname" placeholder="您的姓名" aria-label="您的姓名" required />
+          <!-- 表单已激活，指向您的 Getform URL -->
+          <form class="grid" action="https://getform.io/f/ajjozlga" method="POST">
+            <input type="text" id="firstname" name="name" placeholder="您的姓名" aria-label="您的姓名" required />
             <input type="email" id="email" name="email" placeholder="您的電子郵件" aria-label="您的電子郵件" required />
-            <button type="submit" onclick="event.preventDefault()">送出</button>
+            <button type="submit">送出</button>
           </form>
         </article>
       </div>
