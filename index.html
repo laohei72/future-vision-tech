@@ -22,6 +22,16 @@
         scroll-behavior: smooth;
       }
     </style>
+    <style>
+  #back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none; /* 默认隐藏 */
+    border-radius: 50%;
+    padding: 0.5rem 0.8rem;
+  }
+</style>
   </head>
   <body id="top">
 
@@ -81,6 +91,22 @@
 <div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
   <a href="services.html" role="button" class="contrast">深入了解我们的服务</a>
 </div>
+<!-- ... 在 <main> 结束前 ... -->
+<hr>
+<h3>常見問題 (FAQ)</h3>
+<details>
+  <summary>你們的服務適合什麼規模的企業？</summary>
+  <p>我們的解決方案具有高度的靈活性和擴展性，無論是初創公司還是大型企業，我們都能提供符合其需求和預算的客製化服務。</p>
+</details>
+<details>
+  <summary>導入AI解決方案的週期大概是多久？</summary>
+  <p>專案週期取決於需求的複雜程度。一個典型的POC（概念驗證）專案可能需要4-6週，而一個完整的系統導入可能需要3-6個月。</p>
+</details>
+<details>
+  <summary>你們是否提供後續的技術支持和維護？</summary>
+  <p>是的，我們提供全面的售後支持，包括系統監控、定期維護、功能升級和技術諮詢，確保您的系統長期穩定運行。</p>
+</details>
+      
     </main>
 
     <!-- 訂閱/聯絡區 -->
@@ -108,6 +134,20 @@
         <a href="#">隱私政策</a>
       </small>
     </footer>
+<!-- 返回顶部按钮 -->
+<a href="#top" id="back-to-top" role="button">↑</a>
 
+<!-- 控制按钮显示的脚本 -->
+<script>
+  let backToTopBtn = document.getElementById("back-to-top");
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+</script>
   </body>
 </html>
