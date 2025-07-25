@@ -1,153 +1,128 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-  <head>
+<html lang="en"> <!-- 语言设置为英语 -->
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>未來視界科技有限公司 - 智慧連結世界</title>
+    <title>Future Vision Technologies - Your Partner in Digital Innovation</title>
 
-    <!-- SEO and Social Sharing Meta Tags -->
-    <meta name="description" content="未來視界科技專注於提供企業AI解決方案、數位轉型顧問與雲端整合技術，助您智慧連結世界，創造數位未來。" />
-    <meta property="og:title" content="未來視界科技有限公司" />
-    <meta property="og:description" content="智慧連結世界，創造數位未來。" />
+    <!-- SEO 和社交分享的中继标签 (英文内容) -->
+    <meta name="description" content="Future Vision Technologies specializes in enterprise AI solutions, digital transformation consulting, and cloud integration platforms to drive your business forward." />
+    <meta property="og:title" content="Future Vision Technologies" />
+    <meta property="og:description" content="Connecting Worlds, Creating the Future." />
     <meta property="og:image" content="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" />
-    <meta property="og:url" content="https://future.laohei.me" /> <!-- 请确认这是您的最终域名 -->
+    <meta property="og:url" content="https://future.laohei.me" /> <!-- 提示：请确认这是您的最终域名 -->
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
     
-    <!-- Smooth Scrolling CSS -->
+    <!-- 用于平滑滚动和返回顶部按钮的CSS样式 -->
     <style>
       html {
         scroll-behavior: smooth;
       }
+      #back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        display: none;
+        border-radius: 50%;
+        padding: 0.5rem 0.8rem;
+      }
     </style>
-    <style>
-  #back-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    display: none; /* 默认隐藏 */
-    border-radius: 50%;
-    padding: 0.5rem 0.8rem;
-  }
-</style>
-  </head>
-  <body id="top">
+</head>
+<body id="top">
 
-    <!-- 導覽列 -->
+    <!-- 导航栏 -->
     <nav class="container-fluid">
       <ul>
-        <li><strong>未來視界科技</strong></li>
+        <li><strong>Future Vision Tech</strong></li>
       </ul>
       <ul>
-        <li><a href="#top">首頁</a></li>
-        <li><a href="about.html">關於我們</a></li> <!-- 链接到新的 about.html 页面 -->
-        <li><a href="#contact" role="button">聯絡我們</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#contact" role="button">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- 主要內容 -->
+    <!-- 主要内容区 -->
     <main class="container">
+      <hgroup>
+        <h2>Connecting Worlds with Intelligence</h2>
+        <h3>Your Strategic Partner for a Digital Future</h3>
+      </hgroup>
+      <p>Future Vision Technologies is dedicated to digital innovation. We empower businesses with cutting-edge AI solutions, expert digital transformation consulting, and robust cloud integration platforms, helping you enhance efficiency, competitiveness, and market agility.</p>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="Team meeting at the office" />
+        <figcaption><a href="https://unsplash.com/photos/wD1LRb9OeEo" target="_blank">Image Source: Unsplash</a></figcaption>
+      </figure>
+
+      <!-- 核心优势模块 -->
       <div class="grid">
-        <section>
-          <hgroup>
-            <h2>智慧連結世界</h2>
-            <h3>打造數位未來的企業夥伴</h3>
-          </hgroup>
-          <p>未來視界科技專注於數位創新，致力於提供企業 AI 解決方案、數位轉型顧問與雲端整合技術。我們協助企業提升效率、競爭力與市場敏捷度。</p>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="公司團隊會議" />
-            <figcaption><a href="https://unsplash.com/photos/wD1LRb9OeEo" target="_blank">圖片來源：Unsplash</a></figcaption>
-          </figure>
-
-          <h3 id="services">我們的服務</h3> <!-- 为服务区域添加ID，方便从其他页面跳转回来 -->
-          <p><strong>1. 數位轉型顧問：</strong>量身打造企業的轉型策略與實施計畫。</p>
-          <p><strong>2. AI 解決方案：</strong>導入智慧系統、自動化流程，提升營運效率。</p>
-          <p><strong>3. 雲端整合平台：</strong>建構跨平台雲端應用，支援遠端與即時資料連結。</p>
-        </section>
+        <article>
+          <h4 align="center">🚀 Efficiency Driven</h4>
+          <p align="center">Automate repetitive work with our AI solutions and free up your team for what truly matters.</p>
+        </article>
+        <article>
+          <h4 align="center">💡 Expert Insight</h4>
+          <p align="center">Leverage our deep industry experience to build a practical and effective digital transformation roadmap.</p>
+        </article>
+        <article>
+          <h4 align="center">☁️ Seamless Integration</h4>
+          <p align="center">Our reliable cloud platforms break down data silos and ensure smooth information flow across your organization.</p>
+        </article>
       </div>
-   <!-- ... 我们的服务部分结束 ... -->
 
-<hr> <!-- 添加一条分割线 -->
-
-<!-- 核心优势 -->
-<div class="grid">
-  <article>
-    <h4 align="center">🚀 效率驱动</h4>
-    <p align="center">我们的AI解决方案能将重复性工作自动化，将您的团队从繁琐任务中解放出来。</p>
-  </article>
-  <article>
-    <h4 align="center">💡 专家洞察</h4>
-    <p align="center">我们的顾问团队拥有深厚的行业经验，为您提供切实可行的数字化转型蓝图。</p>
-  </article>
-  <article>
-    <h4 align="center">☁️ 无缝整合</h4>
-    <p align="center">我们打造的云平台稳定可靠，打破数据孤岛，实现信息的无缝流转。</p>
-  </article>
-</div>
-
-<!-- 行动号召 -->
-<div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
-  <a href="services.html" role="button" class="contrast">深入了解我们的服务</a>
-</div>
-<!-- ... 在 <main> 结束前 ... -->
-<hr>
-<h3>常見問題 (FAQ)</h3>
-<details>
-  <summary>你們的服務適合什麼規模的企業？</summary>
-  <p>我們的解決方案具有高度的靈活性和擴展性，無論是初創公司還是大型企業，我們都能提供符合其需求和預算的客製化服務。</p>
-</details>
-<details>
-  <summary>導入AI解決方案的週期大概是多久？</summary>
-  <p>專案週期取決於需求的複雜程度。一個典型的POC（概念驗證）專案可能需要4-6週，而一個完整的系統導入可能需要3-6個月。</p>
-</details>
-<details>
-  <summary>你們是否提供後續的技術支持和維護？</summary>
-  <p>是的，我們提供全面的售後支持，包括系統監控、定期維護、功能升級和技術諮詢，確保您的系統長期穩定運行。</p>
-</details>
-      
+      <!-- 行动号召按钮 -->
+      <div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
+        <a href="services.html" role="button" class="contrast">Explore Our Services in Detail</a>
+      </div>
     </main>
 
-    <!-- 訂閱/聯絡區 -->
-    <section aria-label="Subscribe example" id="contact">
+    <!-- 联系方式区域 -->
+    <section id="contact" aria-label="Contact Section">
       <div class="container">
         <article>
           <hgroup>
-            <h2>聯絡我們</h2>
-            <h3>留下聯絡方式，我們會盡快與您聯繫</h3>
+            <h2>Get in Touch</h2>
+            <h3>Let's discuss how we can shape the future of your business.</h3>
           </hgroup>
-          <!-- 表单已激活，指向您的 Getform URL -->
+          <p>You can reach us directly through our primary contact channel. Please add our official contact ID:</p>
+          <!-- 提示：这里显示您的联系ID -->
+          <h3 style="text-align: center; font-family: monospace; background: #f1f1f1; padding: 1rem; border-radius: 5px;">xa3115</h3>
+          <hr>
+          <p>Alternatively, leave your details below, and we will get back to you as soon as possible.</p>
+          <!-- 提示：这里的表单提交到您之前设置的Getform地址 -->
           <form class="grid" action="https://getform.io/f/ajjozlga" method="POST">
-            <input type="text" id="firstname" name="name" placeholder="請留言" aria-label="請留言" required />
-            <input type="email" id="email" name="email" placeholder="您的電子郵件" aria-label="您的電子郵件" required />
-            <button type="submit">送出</button>
+            <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email Address" aria-label="Your Email Address" required />
+            <button type="submit">Submit</button>
           </form>
         </article>
       </div>
     </section>
 
-    <!-- 頁腳 -->
+    <!-- 网站页脚 -->
     <footer class="container">
       <small>
-        <a href="#">© 2025 未來視界科技有限公司</a> • 
-        <a href="#">隱私政策</a>
+        <a href="#">© 2025 Future Vision Technologies</a> • 
+        <a href="#">Privacy Policy</a>
       </small>
     </footer>
-<!-- 返回顶部按钮 -->
-<a href="#top" id="back-to-top" role="button">↑</a>
 
-<!-- 控制按钮显示的脚本 -->
-<script>
-  let backToTopBtn = document.getElementById("back-to-top");
-
-  window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      backToTopBtn.style.display = "block";
-    } else {
-      backToTopBtn.style.display = "none";
-    }
-  };
-</script>
-  </body>
+    <!-- 返回顶部按钮 -->
+    <a href="#top" id="back-to-top" role="button">↑</a>
+    <!-- 控制按钮显示的脚本 -->
+    <script>
+      let backToTopBtn = document.getElementById("back-to-top");
+      window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      };
+    </script>
+</body>
 </html>
